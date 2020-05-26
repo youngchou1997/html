@@ -104,7 +104,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged && npm run build && git add dist",
-      "pre-push": "git subtree push --prefix dist origin gh-pages"
+      "post-commit": "git subtree push --prefix dist origin gh-pages"
     }
   }
 }
